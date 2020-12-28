@@ -6,15 +6,15 @@ exports.sendmailer = function(){
       port: 465,
       secure: true, // SSL
       auth: {
-          user: 'b.life.kami@gmail.com',
-          pass: 'gogo6153'
+          user: 'メールアドレス',
+          pass: 'パスワード'
       }
     };
     const smtp = nodemailer.createTransport(smtpConfig);
   
     const message = {
-      from: 'b.life.kami@gmail.com',
-      to: 'b.life.kami@gmail.com',
+      from: '送り先メールアドレス',
+      to: '宛先メールアドレス',
       subject: "明日は雨です。",
       html: "明日は雨です傘を持ちましょう"
     };
